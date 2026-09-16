@@ -4,14 +4,20 @@ const fs = require('fs/promises');
 const https = require('https');
 
 const app = express();
+const publicDirectory = path.join(__dirname, 'public');
+const investorDeckPath = path.join(publicDirectory, 'SHOGI-Systems-Inc-Seed-Deck.pdf');
 
 app.get('/', async (req, res) => {
   const seedRoundPagePath = path.join(__dirname, 'public', 'seed-round-investor-page.html');
   await sendHtmlWithInsights(res, seedRoundPagePath);
 });
 
+app.get('/SHOGI-Systems-Inc-Seed-Deck.pdf', (req, res) => {
+  res.sendFile(investorDeckPath);
+});
+
 // Serve static files from public directory
-app.use(express.static('public'));
+app.use(express.static(publicDirectory));
 
 // Proxy endpoint to bypass ad blockers - fetches Vercel insights script from unrecognizable URL
 app.get('/lib/telemetry.js', (req, res) => {
