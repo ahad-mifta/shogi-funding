@@ -5,6 +5,11 @@ const https = require('https');
 
 const app = express();
 
+app.get('/', async (req, res) => {
+  const seedRoundPagePath = path.join(__dirname, 'public', 'seed-round-investor-page.html');
+  await sendHtmlWithInsights(res, seedRoundPagePath);
+});
+
 // Serve static files from public directory
 app.use(express.static('public'));
 
@@ -51,10 +56,6 @@ app.get('/seed-round-investor-page', async (req, res) => {
 });
 
 // Redirect root and /seed-round to /seed-round-investor-page
-app.get('/', (req, res) => {
-  res.redirect(301, '/seed-round-investor-page');
-});
-
 app.get('/seed-round', (req, res) => {
   res.redirect(301, '/seed-round-investor-page');
 });
