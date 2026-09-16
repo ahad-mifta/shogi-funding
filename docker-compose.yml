@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  shogi-preview:
+    build: .
+    container_name: shogi-preview-server
+    ports:
+      - "443:443"
+    volumes:
+      - ./certs:/app/certs:ro
+    environment:
+      - NODE_ENV=production
+      - PORT=443
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "https://localhost/seed-round-investor-page"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+  # Optional: Add nginx reverse proxy for better SSL handling
+  nginx:
+    image: nginx:alpine
+    container_name: shogi-nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf.example:/etc/nginx/conf.d/default.conf:ro
+      - ./certs:/etc/nginx/certs:ro
+    depends_on:
+      - shogi-preview
+    restart: unless-stopped
+    environment:
+      - NGINX_HOST=shogisystems.com
+      - NGINX_PORT=443

@@ -1,0 +1,17 @@
+{
+  "name": "shogi-systems-preview",
+  "version": "1.0.0",
+  "description": "SHOGI Systems preview sites",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
