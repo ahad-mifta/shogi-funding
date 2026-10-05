@@ -6,7 +6,7 @@ const crypto = require('crypto');
 
 const app = express();
 const publicDirectory = path.join(__dirname, 'public');
-const investorDeckPath = path.join(publicDirectory, 'SHOGI-Systems-Inc-Seed-Deck.pdf');
+const investorDeckPath = path.join(publicDirectory, 'SHOGI-Seed-Round-Deck.pdf');
 const passwordProtectionPagePath = path.join(publicDirectory, 'password-protection.html');
 const seedRoundPassword = process.env.SEED_ROUND_PASSWORD || 'SHOGIAuthority!26';
 const accessCookieName = 'shogi_seed_round_access';
@@ -64,7 +64,7 @@ app.get(['/', '/seed-round-investor-page', '/seed-round-investor-page.html'], re
   await sendHtmlWithInsights(res, seedRoundPagePath);
 });
 
-app.get('/SHOGI-Systems-Inc-Seed-Deck.pdf', requireSeedRoundAccess, (req, res) => {
+app.get('/SHOGI-Seed-Round-Deck.pdf', requireSeedRoundAccess, (req, res) => {
   res.sendFile(investorDeckPath);
 });
 
