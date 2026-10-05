@@ -1,6 +1,6 @@
 # SHOGI Preview - Quick Start Guide
 
-## � Get Started (2 Steps)
+## Get Started (2 Steps)
 
 ### Step 1: Install & Start
 ```bash

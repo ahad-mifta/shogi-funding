@@ -126,6 +126,6 @@ app.get('/seed-round', requireSeedRoundAccess, (req, res) => {
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`✅ Server running on http://localhost:${PORT}`);
-  console.log(`📍 Seed Round Investor Page: http://localhost:${PORT}/seed-round-investor-page`);
+  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`[info] Seed Round Investor Page: http://localhost:${PORT}/seed-round-investor-page`);
 });
