@@ -505,14 +505,27 @@ section{padding:62px 0}
 </ul>
 </div>
 <aside class="deck">
-<p class="eyebrow">Investor materials</p>
-<h3>Start with the SHOGI investor deck and Strategic Overview.</h3>
-<p>Our current eight-slide deck outlines the security problem, SHOGI’s cryptographic architecture, the patent position, team, advisors, and strategic opportunity. Our Strategic Overview document goes deeper, explaining why pre-execution, post-quantum cryptographic authority infrastructure is the missing control layer for autonomous AI and how SHOGI’s architecture is designed to provide it.</p>
-<a class="button" href="/SHOGI-Seed-Round-Deck.pdf" target="_blank" rel="noopener">Open investor deck (PDF)</a>
-<a class="button" href="/SHOGI Strategic Overview.pdf" target="_blank" rel="noopener">Read Strategic Overview</a>
-
+  <p class="eyebrow">Investor materials</p>
+  <h3>Start with the SHOGI investor deck and Strategic Overview.</h3>
+  <p>Our current eight-slide deck outlines the security problem, SHOGI’s cryptographic architecture, the patent position, team, advisors, and strategic opportunity. Our Strategic Overview document goes deeper, explaining why pre-execution, post-quantum cryptographic authority infrastructure is the missing control layer for autonomous AI and how SHOGI’s architecture is designed to provide it.</p>
+  
+  <!-- Wrap the buttons in a new div container -->
+  <div class="deck-buttons">
+    <a class="button" href="/SHOGI-Seed-Round-Deck.pdf" target="_blank" rel="noopener">Open investor deck (PDF)</a> 
+    <a class="button" href="/SHOGI Strategic Overview.pdf" target="_blank" rel="noopener">Read Strategic Overview</a>
+  </div>
 </aside>
 </div>
+
+<style>
+  /* Style the container to arrange buttons horizontally with a gap */
+  .deck-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to stack nicely on smaller mobile screens */
+    gap: 16px;       /* Controls the exact space between the buttons */
+    margin-top: 20px; /* Optional: adds space between the paragraph text and the buttons */
+  }
+</style>
 </section>
 <section class="cta">
 <div class="wrap cta-grid">
