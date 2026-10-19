@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHOGI: Why now section (two futures)</title>
+<style>
+  :root {
+    --bg: #f8f9fb;
+    --ink: #0a1a2c;
+    --body: #4a5568;
+    --muted: #6b7686;
+    --teal: #3fa9a0;
+    --blue: #2d74c8;
+    --blue-dark: #1f5aa3;
+    --line: #dde2ea;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: var(--bg); color: var(--body); }
+
+  .why-now { padding: 96px 24px; }
+  .why-now__inner {
+    max-width: 1120px; margin: 0 auto;
+    display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    gap: 64px; align-items: start;
+  }
+
+  .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--teal); margin: 0 0 20px; }
+  .lead { font-size: 20px; line-height: 1.55; color: var(--body); margin: 0 0 40px; max-width: 34em; }
+
+  .stories { border-top: 1px solid var(--line); padding-top: 32px; }
+  .stories h2 { font-size: clamp(22px, 2.5vw, 29px); line-height: 1.2; letter-spacing: -0.015em; color: var(--ink); margin: 0 0 20px; text-wrap: balance; }
+  .stories p { font-size: 18px; line-height: 1.6; margin: 0 0 28px; max-width: 34em; }
+  .stories a.inline { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+  .btn-outline {
+    display: inline-block; padding: 14px 24px; font-size: 16px; font-weight: 700;
+    color: var(--blue); background: transparent; border: 2px solid var(--blue);
+    text-decoration: none; transition: background .15s, color .15s;
+  }
+  .btn-outline:hover { background: var(--blue); color: #fff; }
+  .btn-outline:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+  .note { font-size: 13px; color: var(--muted); margin: 0; }
+
+  /* Existing Investor materials card, unchanged in content */
+  .card { background: var(--card); padding: 36px; box-shadow: 0 12px 40px rgba(10, 26, 44, .08); border: 1px solid var(--line); }
+  .card .eyebrow { color: var(--muted); font-size: 12px; margin-bottom: 16px; }
+  .card h3 { font-size: 28px; line-height: 1.15; color: var(--ink); margin: 0 0 20px; letter-spacing: -0.01em; }
+  .card p { font-size: 16px; line-height: 1.65; margin: 0 0 28px; }
+  .btn-solid {
+    display: block; text-align: center; padding: 18px 20px; margin-bottom: 14px;
+    background: var(--blue); color: #fff; font-weight: 700; font-size: 16px; text-decoration: none;
+  }
+  .btn-solid:hover { background: var(--blue-dark); }
+  .btn-solid:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+  .btn-solid:last-child { margin-bottom: 0; }
+
+  @media (max-width: 860px) {
+    .why-now { padding: 64px 20px; }
+    .why-now__inner { grid-template-columns: 1fr; gap: 48px; }
+    .card { padding: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<section class="why-now" aria-labelledby="why-now-heading">
+  <div class="why-now__inner">
+
+    <!-- LEFT: new content -->
+    <div>
+      <p class="eyebrow">Why now</p>
+      <p class="lead">As the AI market consolidates, trust becomes the durable advantage. The companies that earn enterprise, government, and public confidence will pull ahead.</p>
+
+      <div class="stories">
+        <h2 id="why-now-heading">Two futures for SHOGI, written as if they’ve already happened.</h2>
+        <p>Two <a class="inline" href="https://productstrategy.co/working-backwards-the-amazon-prfaq-for-product-innovation/" target="_blank" rel="noopener noreferrer">PR/FAQs</a>, written in Amazon’s “working backwards” style: one imagines our launch, the other our exit.</p>
+        <div class="actions">
+          <a class="btn-outline" href="#launch-prfaq">Read the launch PR/FAQ</a>
+          <a class="btn-outline" href="#exit-prfaq">Read the exit PR/FAQ</a>
+        </div>
+        <p class="note">Illustrative scenarios, not forecasts or projections.</p>
+      </div>
+    </div>
+
+    <!-- RIGHT: existing Investor materials card -->
+    <aside class="card" aria-labelledby="inv-materials">
+      <p class="eyebrow" id="inv-materials">Investor materials</p>
+      <h3>Start with the SHOGI investor deck and Strategic Overview.</h3>
+      <p>Our current nine-slide deck outlines the security problem, SHOGI’s cryptographic architecture, the patent position, team, advisors, and strategic opportunity. Our Strategic Overview document goes deeper, explaining why pre-execution, post-quantum cryptographic authority infrastructure is the missing control layer for autonomous AI and how SHOGI’s architecture is designed to provide it.</p>
+      <a class="btn-solid" href="#deck">Open investor deck (PDF)</a>
+      <a class="btn-solid" href="#overview">Read Strategic Overview</a>
+    </aside>
+
+  </div>
+</section>
+
+</body>
+</html>

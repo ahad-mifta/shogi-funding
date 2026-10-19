@@ -394,6 +394,27 @@ section{padding:62px 0}
 
 }
 
+.why-now{padding:96px 24px}
+.why-now__inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:64px;align-items:start}
+.why-now .lead{font-size:20px;line-height:1.55;color:#4a5568;margin:0 0 40px;max-width:34em}
+.why-now .stories{border-top:1px solid #dde2ea;padding-top:32px}
+.why-now .stories h2{font-size:clamp(22px,2.5vw,29px);line-height:1.2;letter-spacing:-.015em;color:#061b32;margin:0 0 20px}
+.why-now .stories p{font-size:18px;line-height:1.6;margin:0 0 28px;max-width:34em;color:#4a5568}
+.why-now .stories a.inline{color:#2d74c8;text-decoration:underline;text-underline-offset:3px}
+.why-now .actions{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 20px}
+.why-now .btn-outline{display:inline-block;padding:14px 24px;font-size:16px;font-weight:700;color:#2d74c8;background:transparent;border:2px solid #2d74c8;text-decoration:none;transition:background .15s,color .15s}
+.why-now .btn-outline:hover{background:#2d74c8;color:#fff}
+.why-now .btn-outline:focus-visible{outline:3px solid #10bdb2;outline-offset:3px}
+.why-now .note{font-size:13px!important;color:#6b7686!important;margin:0!important}
+.why-now .card{background:#fff;padding:36px;box-shadow:0 12px 40px rgba(10,26,44,.08);border:1px solid #dde2ea}
+.why-now .card .eyebrow{color:#6b7686;font-size:12px;margin-bottom:16px}
+.why-now .card h3{font-size:28px;line-height:1.15;color:#061b32;margin:0 0 20px;letter-spacing:-.01em}
+.why-now .card p{font-size:16px;line-height:1.65;margin:0 0 28px;color:#4a5568}
+.why-now .btn-solid{display:block;text-align:center;padding:18px 20px;margin-bottom:14px;background:#2d74c8;color:#fff;font-weight:700;font-size:16px;text-decoration:none}
+.why-now .btn-solid:hover{background:#1f5aa3}
+.why-now .btn-solid:focus-visible{outline:3px solid #10bdb2;outline-offset:3px}
+.why-now .btn-solid:last-child{margin-bottom:0}
+@media (max-width:860px){.why-now{padding:64px 20px}.why-now__inner{grid-template-columns:1fr;gap:48px}.why-now .card{padding:28px}}
 </style>
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);
 
@@ -418,7 +439,7 @@ section{padding:62px 0}
 <h1>Cryptographic Authority Infrastructure for Autonomous Systems.</h1>
 <p class="hero-copy">SHOGI is building post-quantum cryptographic authority for Agentic AI, IoT, and Physical AI so that consequential actions can be trusted.</p>
 <div class="actions">
-<a class="button primary" href="/SHOGI-Seed-Round-Deck.pdf" target="_blank" rel="noopener">View the 8-slide investor deck</a>
+<a class="button primary" href="/SHOGI-Seed-Round-Deck.pdf" target="_blank" rel="noopener">View the 9-slide investor deck</a>
 <a class="button primary" href="/SHOGI Strategic Overview.pdf" target="_blank" rel="noopener">Read The Strategic Overview</a>
 </div>
 </div>
@@ -427,7 +448,7 @@ section{padding:62px 0}
 <div class="wrap">
 <p class="label">Round status</p>
 <p>
-<strong>SHOGI is not another guardrail, sandbox, or agent IAM layer. SHOGI makes authority cryptographic: post-quantum, identity-bound, and enforceable by quorum before execution. SHOGI is raising a seed round to build post-quantum cryptographic authority infrastructure for agentic AI, IoT, and physical AI. The company is engaging qualified investors and strategic partners.</strong>
+<strong>STPA-Sec identifies which autonomous actions must never run unauthorized. Cryptographic authority makes sure they can’t.</strong>
 </p>
 </div>
 </aside>
@@ -446,9 +467,9 @@ section{padding:62px 0}
 <p class="eyebrow">What SHOGI does differently</p>
 <h2 class="solution-title">Cryptographic authority outside the autonomous system’s control.</h2>
 <div class="body-copy">
-<p>SHOGI combines ordered identities, post-quantum Identity-Based Encryption (IBE), and signcryption, a single quantum-ready cryptographic process that performs both encryption and authentication, together with controls derived from System-Theoretic Process Analysis for Security (STPA-Sec). <a href="https://youtu.be/dt_toCrA_Mo" target="_blank" rel="noopener">Learn How STPA Works &rarr;
+<p>SHOGI combines ordered identities, post-quantum Identity-Based Encryption (IBE), and signcryption, a single quantum-ready cryptographic process that performs both encryption and authentication, together with controls derived from System-Theoretic Process Analysis for Security (STPA-Sec). 
 
-</a>
+
 </p>
 <p>STPA-Sec is used at U.S. Cyber Command (USCYBERCOM) and for USAF strategic missile systems. SHOGI advisor William “Dollar” Young, creator of STPA-Sec, has contributed to NSA-sponsored research on AI mission assurance that incorporates STPA-Sec. The supporting Syracuse University research paper is linked from slide 2 of the investor deck.</p>
 <p>Even if an autonomous system’s decision-making is manipulated, protected actions still require valid cryptographic authority, verified outside the system’s control. No valid authority means no execution.</p>
@@ -475,65 +496,29 @@ section{padding:62px 0}
 </div>
 </div>
 </section>
-<section>
-<div class="wrap invest-grid">
+<section class="why-now" aria-labelledby="why-now-heading">
+<div class="why-now__inner">
 <div>
 <p class="eyebrow">Why now</p>
-<h2 class="invest-title">AI leaders will compete on trust,<br>not model capability alone.</h2>
-<p class="detail">As the AI market consolidates, the companies that earn enterprise, government, investor, and public confidence will have a durable advantage. SHOGI gives an AI or infrastructure leader the technology, IP, team, and category narrative to define trusted autonomous systems.</p>
-<ul class="reasons">
-<li style="padding-left: 20px;
-
- text-indent: -15.5px;
-
-">Model-agnostic architecture for Agentic AI, IoT, and Physical AI</li>
-<li style="padding-left: 20px;
-
- text-indent: -15.5px;
-
-">Filed IP around Ordered Identities, governance binding, and hidden-channel communication</li>
-<li style="padding-left: 20px;
-
- text-indent: -15.5px;
-
-">Deep expertise across cryptography, AI architecture, embedded security, mission assurance, and IP strategy</li>
-<li style="padding-left: 20px;
-
- text-indent: -15.5px;
-
-">A strategic path to establish cryptographic authority infrastructure as the secure, post-quantum default for Agentic AI, IoT, and Physical AI.</li>
-</ul>
-
+<p class="lead">As the AI market consolidates, trust becomes the durable advantage. The companies that earn enterprise, government, and public confidence will pull ahead.</p>
+<div class="stories">
+<h2 id="why-now-heading">Two futures for SHOGI, written as if they’ve already happened.</h2>
+<p>Two <a class="inline" href="https://productstrategy.co/working-backwards-the-amazon-prfaq-for-product-innovation/" target="_blank" rel="noopener noreferrer">PR/FAQs</a>, written in Amazon’s “working backwards” style: one imagines our launch, the other our exit.</p>
+<div class="actions">
+<a class="btn-outline" href="/SHOGI Exit PRFAQ.pdf" target="_blank" rel="noopener">Read the launch PR/FAQ</a>
+<a class="btn-outline" href="/SHOGI Launch PRFAQ.pdf" target="_blank" rel="noopener">Read the exit PR/FAQ</a>
 </div>
-<aside class="deck">
-  <p class="eyebrow">Investor materials</p>
-  <h3>Start with the SHOGI investor deck and Strategic Overview.</h3>
-  <p>Our current eight-slide deck outlines the security problem, SHOGI’s cryptographic architecture, the patent position, team, advisors, and strategic opportunity. Our Strategic Overview document goes deeper, explaining why pre-execution, post-quantum cryptographic authority infrastructure is the missing control layer for autonomous AI and how SHOGI’s architecture is designed to provide it.</p>
-  
-  <!-- Wrap the buttons in a new div container -->
-   <div class="deck-buttons">
-  <a class="button" href="/SHOGI-Seed-Round-Deck.pdf" target="_blank" rel="noopener">Open investor deck (PDF)</a> 
-  <a class="button" href="/SHOGI Strategic Overview.pdf" target="_blank" rel="noopener">Read Strategic Overview</a>
+<p class="note">Illustrative scenarios, not forecasts or projections.</p>
 </div>
-
-<style>
-  .deck-buttons {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 16px;       
-    margin-top: 20px;
-  }
-
-  /* Target the buttons inside this specific container */
-  .deck-buttons .button {
-    flex: 1;          /* Forces both buttons to grow equally to the same size */
-    text-align: center; /* Centers the text inside the button */
-    min-width: 200px; /* Optional: prevents buttons from getting too squished on mobile */
-  }
-</style>
-
-  
-
+</div>
+<aside class="card" aria-labelledby="inv-materials">
+<p class="eyebrow" id="inv-materials">Investor materials</p>
+<h3>Start with the SHOGI investor deck and Strategic Overview.</h3>
+<p>Our current nine-slide deck outlines the security problem, SHOGI’s cryptographic architecture, the patent position, team, advisors, and strategic opportunity. Our Strategic Overview document goes deeper, explaining why pre-execution, post-quantum cryptographic authority infrastructure is the missing control layer for autonomous AI and how SHOGI’s architecture is designed to provide it.</p>
+<a class="btn-solid" href="/SHOGI-Seed-Round-Deck.pdf" target="_blank" rel="noopener">Open investor deck (PDF)</a>
+<a class="btn-solid" href="/SHOGI Strategic Overview.pdf" target="_blank" rel="noopener">Read Strategic Overview</a>
+</aside>
+</div>
 </section>
 <section class="cta">
 <div class="wrap cta-grid">
