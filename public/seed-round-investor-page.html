@@ -58,7 +58,7 @@ letter-spacing:.075em;
 
 text-decoration:none;
 
-text-transform:uppercase}
+text-transform:none}
 
 .hero{padding:150px 0 92px;
 
@@ -130,17 +130,12 @@ border-color:rgba(255,255,255,.38)}
 
 background:var(--g)}
 
-.status div{display:grid;
+.status div{display:block}
 
-grid-template-columns:170px 1fr;
+.status p{margin:0}
 
-gap:24px}
-
-.status p{margin:0;
-
-font-size:1.04rem;
-
-font-weight:650}
+.status-message{font-size:clamp(1.3rem,2.4vw,1.8rem);line-height:1.35;font-weight:700}
+.status-message span{display:block}
 
 .status .label{font-size:.78rem;
 
@@ -429,7 +424,7 @@ section{padding:62px 0}
 <body>
 <nav class="nav">
 <div class="wrap">
-<a class="wordmark" href="/">SHOGI Systems, Inc.</a>
+<a class="wordmark" href="/" >SHOGI Systems, Inc.</a>
 </div>
 </nav>
 <main>
@@ -446,9 +441,8 @@ section{padding:62px 0}
 </header>
 <aside class="status">
 <div class="wrap">
-<p class="label">Round status</p>
-<p>
-<strong>STPA-Sec identifies which autonomous actions must never run unauthorized. Cryptographic authority makes sure they can’t.</strong>
+<p class="status-message">
+<strong><span>STPA-Sec identifies which autonomous actions must never run unauthorized.</span><span>Cryptographic authority makes sure they can’t.</span></strong>
 </p>
 </div>
 </aside>
@@ -467,13 +461,9 @@ section{padding:62px 0}
 <p class="eyebrow">What SHOGI does differently</p>
 <h2 class="solution-title">Cryptographic authority outside the autonomous system’s control.</h2>
 <div class="body-copy">
-<p>SHOGI combines ordered identities, post-quantum Identity-Based Encryption (IBE), and signcryption, a single quantum-ready cryptographic process that performs both encryption and authentication, together with controls derived from System-Theoretic Process Analysis for Security (STPA-Sec). 
-
-
-</p>
-<p>STPA-Sec is used at U.S. Cyber Command (USCYBERCOM) and for USAF strategic missile systems. SHOGI advisor William “Dollar” Young, creator of STPA-Sec, has contributed to NSA-sponsored research on AI mission assurance that incorporates STPA-Sec. The supporting Syracuse University research paper is linked from slide 2 of the investor deck.</p>
+<p>SHOGI combines ordered identities, post-quantum Identity-Based Encryption (IBE), and signcryption, a single quantum-ready cryptographic process that performs both encryption and authentication, together with controls derived from System-Theoretic Process Analysis for Security (STPA-Sec). </p>
+<p>STPA-Sec is used at U.S. Cyber Command (USCYBERCOM) and for USAF strategic missile systems. SHOGI advisor and STPA-Sec Integration Lead William “Dollar” Young, creator of STPA-Sec, has contributed to NSA-sponsored research on AI mission assurance that incorporates STPA-Sec. The supporting Syracuse University research paper is linked from slide 2 of the investor deck.</p>
 <p>Even if an autonomous system’s decision-making is manipulated, protected actions still require valid cryptographic authority, verified outside the system’s control. No valid authority means no execution.</p>
-</div>
 </div>
 </section>
 <section class="architecture">
@@ -505,8 +495,8 @@ section{padding:62px 0}
 <h2 id="why-now-heading">Two futures for SHOGI, written as if they’ve already happened.</h2>
 <p>Two <a class="inline" href="https://productstrategy.co/working-backwards-the-amazon-prfaq-for-product-innovation/" target="_blank" rel="noopener noreferrer">PR/FAQs</a>, written in Amazon’s “working backwards” style: one imagines our launch, the other our exit.</p>
 <div class="actions">
-<a class="btn-outline" href="/SHOGI Exit PRFAQ.pdf" target="_blank" rel="noopener">Read the launch PR/FAQ</a>
-<a class="btn-outline" href="/SHOGI Launch PRFAQ.pdf" target="_blank" rel="noopener">Read the exit PR/FAQ</a>
+<a class="btn-outline" href="/SHOGI Launch PRFAQ.pdf" target="_blank" rel="noopener">Read the launch PR/FAQ</a>
+<a class="btn-outline" href="/SHOGI Exit PRFAQ.pdf" target="_blank" rel="noopener">Read the exit PR/FAQ</a>
 </div>
 <p class="note">Illustrative scenarios, not forecasts or projections.</p>
 </div>
@@ -514,7 +504,7 @@ section{padding:62px 0}
 <aside class="card" aria-labelledby="inv-materials">
 <p class="eyebrow" id="inv-materials">Investor materials</p>
 <h3>Start with the SHOGI investor deck and Strategic Overview.</h3>
-<p>Our current nine-slide deck outlines the security problem, SHOGI’s cryptographic architecture, the patent position, team, advisors, and strategic opportunity. Our Strategic Overview document goes deeper, explaining why pre-execution, post-quantum cryptographic authority infrastructure is the missing control layer for autonomous AI and how SHOGI’s architecture is designed to provide it.</p>
+<p>Our current nine-slide deck outlines the security problem, SHOGI’s cryptographic architecture, the patent position, team, advisors, and strategic opportunity. Our Strategic Overview document goes deeper, explaining why pre-execution, post-quantum cryptographic authority infrastructure is the missing control layer for autonomous AI and how SHOGI’s architecture is designed to provide&nbsp;it.</p>
 <a class="btn-solid" href="/SHOGI-Seed-Round-Deck.pdf" target="_blank" rel="noopener">Open investor deck (PDF)</a>
 <a class="btn-solid" href="/SHOGI Strategic Overview.pdf" target="_blank" rel="noopener">Read Strategic Overview</a>
 </aside>
