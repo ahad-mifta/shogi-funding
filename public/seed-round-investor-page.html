@@ -227,7 +227,7 @@ white-space:nowrap}
 
 .steps{display:grid;
 
-grid-template-columns:repeat(5,1fr);
+grid-template-columns:repeat(6,1fr);
 
 gap:14px;
 
@@ -337,6 +337,8 @@ white-space:nowrap}
 
 align-self:end;
 
+padding:16px 19px;
+
 color:#031521;
 
 background:var(--t);
@@ -392,15 +394,16 @@ section{padding:62px 0}
 .why-now{padding:96px 24px}
 .why-now__inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:64px;align-items:start}
 .why-now .lead{font-size:20px;line-height:1.55;color:#4a5568;margin:0 0 40px;max-width:34em}
-.why-now .stories{border-top:1px solid #dde2ea;padding-top:32px}
-.why-now .stories h2{font-size:clamp(22px,2.5vw,29px);line-height:1.2;letter-spacing:-.015em;color:#061b32;margin:0 0 20px}
-.why-now .stories p{font-size:18px;line-height:1.6;margin:0 0 28px;max-width:34em;color:#4a5568}
-.why-now .stories a.inline{color:#2d74c8;text-decoration:underline;text-underline-offset:3px}
-.why-now .actions{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 20px}
-.why-now .btn-outline{display:inline-block;padding:14px 24px;font-size:16px;font-weight:700;color:#2d74c8;background:transparent;border:2px solid #2d74c8;text-decoration:none;transition:background .15s,color .15s}
-.why-now .btn-outline:hover{background:#2d74c8;color:#fff}
-.why-now .btn-outline:focus-visible{outline:3px solid #10bdb2;outline-offset:3px}
-.why-now .note{font-size:13px!important;color:#6b7686!important;margin:0!important}
+.stories-section{color:#fff;background:var(--n)}
+.stories-section .wrap{max-width:1120px}
+.stories-section h2{max-width:760px;font-size:clamp(1.8rem,2.7vw,2.4rem);line-height:1.2;letter-spacing:-.04em;margin:0 0 20px}
+.stories-section p{font-size:18px;line-height:1.6;margin:0 0 28px;max-width:760px;color:#c6d8e8}
+.stories-section a.inline{color:var(--t);text-decoration:underline;text-underline-offset:3px}
+.stories-section .actions{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 20px}
+.stories-section .btn-outline{display:inline-block;padding:14px 24px;font-size:16px;font-weight:700;color:#fff;background:transparent;border:2px solid rgba(255,255,255,.55);text-decoration:none;transition:background .15s,color .15s}
+.stories-section .btn-outline:hover{color:#031521;background:var(--t);border-color:var(--t)}
+.stories-section .btn-outline:focus-visible{outline:3px solid var(--t);outline-offset:3px}
+.stories-section .note{font-size:13px!important;color:#9bb0c0!important;margin:0!important}
 .why-now .card{background:#fff;padding:36px;box-shadow:0 12px 40px rgba(10,26,44,.08);border:1px solid #dde2ea}
 .why-now .card .eyebrow{color:#6b7686;font-size:12px;margin-bottom:16px}
 .why-now .card h3{font-size:28px;line-height:1.15;color:#061b32;margin:0 0 20px;letter-spacing:-.01em}
@@ -434,7 +437,7 @@ section{padding:62px 0}
 <h1>Cryptographic Authority Infrastructure for Autonomous Systems.</h1>
 <p class="hero-copy">SHOGI is building post-quantum cryptographic authority for Agentic AI, IoT, and Physical AI so that no critical action runs without proven authority.</p>
 <div class="actions"> 
-<a class="button primary" href="/SHOGI-Seed-Round-Deck.pdf" target="_blank" rel="noopener">View the 9-slide investor deck</a>
+<a class="button primary" href="/SHOGI-Seed-Round-Deck.pdf" target="_blank" rel="noopener">View The 9-slide investor deck</a>
 <a class="button primary" href="/SHOGI Strategic Overview.pdf" target="_blank" rel="noopener">Read The Strategic Overview</a>
 <a class="button primary" href="/SHOGI_The_Authority_Layer_Web_Version_Draft7_November_2_2026.pdf" target="_blank" rel="noopener">Read The Authority Layer: SHOGI vs. 20 Existing Platforms</a>
 </div>
@@ -443,7 +446,7 @@ section{padding:62px 0}
 <aside class="status">
 <div class="wrap">
 <p class="status-message">
-<strong><span>'Zero trust removes implicit trust from access. </span><span>SHOGI removes implicit authority from action.</span></strong>
+<strong><span>'Zero trust removes implicit trust from access. SHOGI removes implicit authority from action.</span></strong>
 </p>
 </div>
 </aside>
@@ -503,8 +506,21 @@ section{padding:62px 0}
 <p class="lead">Autonomous AI is moving into consequential work, and trust at that level has to be enforced, not only promised. Every AI provider, hyperscaler, systems integrator, security platform, industrial technology leader, and chipmaker deploying autonomous systems will need an authority layer. Each will have to build it or acquire it. </p>
 <p class="lead">In May 2026, NSA, CISA and their Five Eyes partners recommended human approval before high-impact agent actions. In October, Cisco’s president called AI agent safety “the issue of our time”. Buyers are consolidating the category: Cisco agreed in May to buy Astrix for a reported $400 million, Rubrik bought Strata in June, and Cyera completed its $1 billion purchase of Oasis Security in September. And the elliptic-curve cryptography behind most of today’s signatures faces both quantum computers and new research questioning its foundations. SHOGI’s cryptography is lattice-based from the start.
 </p>
-<div class="stories">
-<h2 id="why-now-heading">Two futures for SHOGI, written as if they’ve already happened.</h2>
+</div>
+<aside class="card" aria-labelledby="inv-materials">
+<p class="eyebrow" id="inv-materials">Investor materials</p>
+<h3>Start with the deck. Go deeper with the Strategic Overview and The Authority Layer.</h3>
+<p>The nine-slide deck covers the problem, SHOGI’s cryptographic architecture, patent position, team, advisors, and strategic opportunity. The Strategic Overview explains why autonomous AI needs an authority layer enforced before execution. The Authority Layer compares SHOGI with twenty existing platforms, from Okta, AWS, and Cyera to early-stage startups, and shows why the authority layer is still almost empty.</p>
+<a class="btn-solid" href="/SHOGI-Seed-Round-Deck.pdf" target="_blank" rel="noopener">Open the Investor Deck</a>
+<a class="btn-solid" href="/SHOGI Strategic Overview.pdf" target="_blank" rel="noopener">Read the Strategic Overview</a>
+<a class="btn-solid" href="/SHOGI_The_Authority_Layer_Web_Version_Draft7_November_2_2026.pdf" target="_blank" rel="noopener">Read the Authority Layer</a>
+</aside>
+</div>
+</section>
+<section class="stories-section" aria-labelledby="stories-heading">
+<div class="wrap">
+<p class="eyebrow">Two possible futures</p>
+<h2 id="stories-heading">Two futures for SHOGI, written as if they’ve already happened.</h2>
 <p>Two <a class="inline" href="https://productstrategy.co/working-backwards-the-amazon-prfaq-for-product-innovation/" target="_blank" rel="noopener noreferrer">PR/FAQs</a>, in the “working backwards” style: one for the day the authority layer launches, the other for the day a strategic buyer acquires it.</p>
 <div class="actions">
 <a class="btn-outline" href="/SHOGI Launch PRFAQ.pdf" target="_blank" rel="noopener">Read the launch PR/FAQ</a>
@@ -512,26 +528,16 @@ section{padding:62px 0}
 </div>
 <p class="note">Illustrative scenarios, not forecasts or projections.</p>
 </div>
-</div>
-<aside class="card" aria-labelledby="inv-materials">
-<p class="eyebrow" id="inv-materials">Investor materials</p>
-<h3>Start with the deck. Go deeper with the Strategic Overview and The Authority Layer.</h3>
-<p>The nine-slide deck covers the problem, SHOGI’s cryptographic architecture, patent position, team, advisors, and strategic opportunity. The Strategic Overview explains why autonomous AI needs an authority layer enforced before execution. The Authority Layer compares SHOGI with twenty existing platforms, from Okta, AWS, and Cyera to early-stage startups, and shows why the authority layer is still almost empty.</p>
-<a class="btn-solid" href="/SHOGI-Seed-Round-Deck.pdf" target="_blank" rel="noopener">Open Investor Deck</a>
-<a class="btn-solid" href="/SHOGI Strategic Overview.pdf" target="_blank" rel="noopener">Read Strategic Overview</a>
-<a class="btn-solid" href="/SHOGI_The_Authority_Layer_Web_Version_Draft7_November_2_2026.pdf" target="_blank" rel="noopener">Read The Authority Layer</a>
-</aside>
-</div>
 </section>
 <section class="cta">
 <div class="wrap cta-grid">
 <div>
-<p class="eyebrow">Investor conversations</p>
+<p class="eyebrow">Investor conversations</p><p></p>
 <h2 style="white-space: nowrap; max-width: none; font-size: clamp(1.6rem, 3.2vw, 2.6rem);">Talk with the SHOGI team.</h2>
 <p class="cta-copy">We are speaking with qualified investors and strategic partners who see the need for cryptographic authority outside an autonomous system’s control.</p>
-<p class="cta-copy">Meet the national-security and cryptography leaders building it.</p>
+<p class="cta-copy">Meet the national-security, cryptography and AI leaders building it.</p>
 </div>
-<a class="button" href="mailto:bmontgomery@shogisystems.com?subject=Request%20A%20Meeting">Speak With the Team</a>
+<a class="button" href="mailto:bmontgomery@shogisystems.com?subject=Request%20A%20Meeting">Speak with The Team</a>
 </div>
 <div class="wrap">
 <p class="legal">This page is for informational purposes only and does not constitute an offer to sell, or a solicitation of an offer to buy, securities. Any offering will be made only through definitive offering materials and only to persons eligible to participate under applicable securities laws.</p>
