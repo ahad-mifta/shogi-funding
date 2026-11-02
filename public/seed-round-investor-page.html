@@ -432,56 +432,65 @@ section{padding:62px 0}
 <div class="wrap">
 <p class="eyebrow">Seed financing</p>
 <h1>Cryptographic Authority Infrastructure for Autonomous Systems.</h1>
-<p class="hero-copy">SHOGI is building post-quantum cryptographic authority for Agentic AI, IoT, and Physical AI so that consequential actions can be trusted.</p>
-<div class="actions">
+<p class="hero-copy">SHOGI is building post-quantum cryptographic authority for Agentic AI, IoT, and Physical AI so that no critical action runs without proven authority.</p>
+<div class="actions"> 
 <a class="button primary" href="/SHOGI-Seed-Round-Deck.pdf" target="_blank" rel="noopener">View the 9-slide investor deck</a>
 <a class="button primary" href="/SHOGI Strategic Overview.pdf" target="_blank" rel="noopener">Read The Strategic Overview</a>
+<a class="button primary" href="/SHOGI_The_Authority_Layer_Web_Version_Draft7_November_2_2026.pdf" target="_blank" rel="noopener">Read The Authority Layer: SHOGI vs. 20 Existing Platforms</a>
 </div>
 </div>
 </header>
 <aside class="status">
 <div class="wrap">
 <p class="status-message">
-<strong><span>STPA-Sec identifies which autonomous actions must never run unauthorized.</span><span>Cryptographic authority makes sure they can’t.</span></strong>
+<strong><span>'Zero trust removes implicit trust from access. </span><span>SHOGI removes implicit authority from action.</span></strong>
 </p>
 </div>
 </aside>
 <section class="problem">
 <div class="wrap">
 <p class="eyebrow">The investment premise</p>
-<h2 class="one-line-title">Powerful AI is not the same thing as trustworthy AI.</h2>
+<h2 class="one-line-title">Build the authority layer. Become a strategic acquisition target.</h2>
 <div class="problem-panel">
-<p>Autonomous systems can operate tools, access systems, and take actions with real business and physical consequences. Their software based authority, policies, and instructions exist inside the same reasoning environment that a capable or compromised autonomous AI may manipulate or circumvent.</p>
-<div class="critical">The critical control point must sit outside the model’s control.</div>
+<p>Autonomous AI systems need more than intelligence. They need enforceable limits on what they may and may not do. SHOGI is building the cryptographic authority layer that keeps consequential actions under independent control. </p>
+<p>Twenty existing platforms already compete to control what AI agents can access. Almost none proves, at the moment of action, that the right people approved that specific action. The access layer is crowded. The authority layer is almost empty. </p>
+<p>We believe this layer will become essential infrastructure for companies deploying autonomous systems. By building it early, SHOGI aims to become a strategic acquisition target for strategic buyers that need to embed trusted authority into their own offerings: leading AI providers, hyperscalers, global systems integrators, security platforms, industrial technology leaders, and chipmakers.
+</p>
+<div class="critical">The opportunity: a foundational layer for autonomous AI,<br> not another security feature.</div>
 </div>
 </div>
 </section>
 <section class="solution">
 <div class="wrap">
 <p class="eyebrow">What SHOGI does differently</p>
-<h2 class="solution-title">Cryptographic authority outside the autonomous system’s control.</h2>
+<h2 class="solution-title">National-security-grade authority, outside the autonomous system’s control.</h2>
 <div class="body-copy">
-<p>SHOGI combines ordered identities, post-quantum Identity-Based Encryption (IBE), and signcryption, a single quantum-ready cryptographic process that performs both encryption and authentication, together with controls derived from System-Theoretic Process Analysis for Security (STPA-Sec). </p>
-<p>STPA-Sec is used at U.S. Cyber Command (USCYBERCOM) and for USAF strategic missile systems. SHOGI advisor and STPA-Sec Integration Lead William “Dollar” Young, creator of STPA-Sec, has contributed to NSA-sponsored research on AI mission assurance that incorporates STPA-Sec. The supporting Syracuse University research paper is linked from slide 2 of the investor deck.</p>
-<p>Even if an autonomous system’s decision-making is manipulated, protected actions still require valid cryptographic authority, verified outside the system’s control. No valid authority means no execution.</p>
+<p>SHOGI combines two inputs. Policy defines what the user expects the agent to do. STPA-Sec constraints define what the agent is not permitted to do. Together they are encoded as an ordered identity inside a SHOGI Identity-Based Encryption (IBE) key, built on post-quantum Learning With Errors (LWE) cryptography, with signcryption built in.</p>
+<p>SHOGI builds its own agents and equips the systems they act on with SHOGI enforcement software: servers, satellites, drones, critical infrastructure, smart cities, industrial IoT, and physical AI. The agent’s key sets the outer limits: an action outside policy, or against STPA-Sec constraints, is outside what the key can authorize. Within those limits, every critical action needs a one-time permit for that exact action, approved by a quorum. On the protected system, a designated driver that runs no AI holds the real credentials, checks the permit, performs the action once and signs a receipt. The agent never holds the power to act alone.</p>
+<p>STPA-Sec (System-Theoretic Process Analysis for Security) was created by SHOGI advisor and STPA-Sec Integration Lead Dr. William “Dollar” Young, a retired USAF Colonel. It identifies the losses a mission cannot accept and derives the constraints that forbid the actions leading to them. It is used at U.S. Cyber Command and in security engineering for the U.S. Air Force’s Sentinel intercontinental ballistic missile program, and Dollar’s work has contributed to NSA-sponsored research on AI mission assurance that incorporates it. The supporting Syracuse University paper is linked from slide 2 of the investor deck.</p>
+<p>Dollar established the 350th Spectrum Warfare Wing. He participates in the Defense Advanced Research Projects Agency’s Information Science and Technology Study Group and is currently developing the protection plan for the Pentagon’s AI-assisted classification-management pilot.</p>
+<p>The SHOGI team has reviewed twenty existing platforms to identify possible design partners, including multiple companies that also use cryptography. These companies primarily authenticate, meaning a signed token says who the agent is and what it may access. SHOGI adds a signed, one-time permit that proves that this exact action was approved by the right parties, and the system that acts checks it before anything happens. Every identity, across groups and sub-agents, is tied back to the human who created it. Ordered identities and signcryption, a single process that performs both encryption and authentication, make that possible. A few platforms have started to sign approvals. In our review, none yet does it in production, and none combines it with rules derived from safety analysis and post-quantum cryptography.</p>
+<p>Even if an autonomous system’s decision-making is manipulated, protected actions still require valid cryptographic authority, enforced by the system being acted on rather than by the agent. No valid authority means no execution.</p>
 </div>
 </section>
 <section class="architecture">
 <div class="wrap">
 <div class="architecture-box">
 <p class="eyebrow">Multi-agent enforcement</p>
-<h2 class="architecture-title">One compromised agent should not be enough.</h2>
+<h2 class="architecture-title">One compromised agent, or one person, should never be enough.</h2>
 <div class="steps">
 <div class="step">
 <strong>Operational agent</strong>Proposes an action within a cryptographically bounded identity.</div>
 <div class="step">
 <strong>Supervisor</strong>Independently classifies the action’s risk.</div>
 <div class="step">
-<strong>Quorum agents</strong>Provide threshold approval for high-risk actions.</div>
+<strong>Quorum agents</strong>Approve each high-risk action by threshold. SHOGI then issues a one-time permit for that exact action.</div>
 <div class="step">
 <strong>Human approvers</strong>Can hold quorum seats for the highest-stakes decisions.</div>
 <div class="step">
-<strong>Audit record</strong>Creates an immutable record of each authorized action.</div>
+<strong>Designated driver</strong>Runs no AI and holds the real credentials. Checks the permit, then performs the exact action once.</div>
+<div class="step">
+<strong>Signed receipt</strong>Records each executed action in a receipt that an authorized auditor can verify.</div>
 </div>
 </div>
 </div>
@@ -490,10 +499,13 @@ section{padding:62px 0}
 <div class="why-now__inner">
 <div>
 <p class="eyebrow">Why now</p>
-<p class="lead">As the AI market consolidates, trust becomes the durable advantage. The companies that earn enterprise, government, and public confidence will pull ahead.</p>
+<h2>Regulators and buyers are already moving.</h2>
+<p class="lead">Autonomous AI is moving into consequential work, and trust at that level has to be enforced, not only promised. Every AI provider, hyperscaler, systems integrator, security platform, industrial technology leader, and chipmaker deploying autonomous systems will need an authority layer. Each will have to build it or acquire it. </p>
+<p class="lead">In May 2026, NSA, CISA and their Five Eyes partners recommended human approval before high-impact agent actions. In October, Cisco’s president called AI agent safety “the issue of our time”. Buyers are consolidating the category: Cisco agreed in May to buy Astrix for a reported $400 million, Rubrik bought Strata in June, and Cyera completed its $1 billion purchase of Oasis Security in September. And the elliptic-curve cryptography behind most of today’s signatures faces both quantum computers and new research questioning its foundations. SHOGI’s cryptography is lattice-based from the start.
+</p>
 <div class="stories">
 <h2 id="why-now-heading">Two futures for SHOGI, written as if they’ve already happened.</h2>
-<p>Two <a class="inline" href="https://productstrategy.co/working-backwards-the-amazon-prfaq-for-product-innovation/" target="_blank" rel="noopener noreferrer">PR/FAQs</a>, written in Amazon’s “working backwards” style: one imagines our launch, the other our exit.</p>
+<p>Two <a class="inline" href="https://productstrategy.co/working-backwards-the-amazon-prfaq-for-product-innovation/" target="_blank" rel="noopener noreferrer">PR/FAQs</a>, in the “working backwards” style: one for the day the authority layer launches, the other for the day a strategic buyer acquires it.</p>
 <div class="actions">
 <a class="btn-outline" href="/SHOGI Launch PRFAQ.pdf" target="_blank" rel="noopener">Read the launch PR/FAQ</a>
 <a class="btn-outline" href="/SHOGI Exit PRFAQ.pdf" target="_blank" rel="noopener">Read the exit PR/FAQ</a>
@@ -503,10 +515,11 @@ section{padding:62px 0}
 </div>
 <aside class="card" aria-labelledby="inv-materials">
 <p class="eyebrow" id="inv-materials">Investor materials</p>
-<h3>Start with the SHOGI investor deck and Strategic Overview.</h3>
-<p>Our current nine-slide deck outlines the security problem, SHOGI’s cryptographic architecture, the patent position, team, advisors, and strategic opportunity. Our Strategic Overview document goes deeper, explaining why pre-execution, post-quantum cryptographic authority infrastructure is the missing control layer for autonomous AI and how SHOGI’s architecture is designed to provide&nbsp;it.</p>
+<h3>Start with the deck. Go deeper with the Strategic Overview and The Authority Layer.</h3>
+<p>The nine-slide deck covers the problem, SHOGI’s cryptographic architecture, patent position, team, advisors, and strategic opportunity. The Strategic Overview explains why autonomous AI needs an authority layer enforced before execution. The Authority Layer compares SHOGI with twenty existing platforms, from Okta, AWS, and Cyera to early-stage startups, and shows why the authority layer is still almost empty.</p>
 <a class="btn-solid" href="/SHOGI-Seed-Round-Deck.pdf" target="_blank" rel="noopener">Open Investor Deck</a>
 <a class="btn-solid" href="/SHOGI Strategic Overview.pdf" target="_blank" rel="noopener">Read Strategic Overview</a>
+<a class="btn-solid" href="/SHOGI_The_Authority_Layer_Web_Version_Draft7_November_2_2026.pdf" target="_blank" rel="noopener">Read The Authority Layer</a>
 </aside>
 </div>
 </section>
@@ -514,10 +527,11 @@ section{padding:62px 0}
 <div class="wrap cta-grid">
 <div>
 <p class="eyebrow">Investor conversations</p>
-<h2 style="white-space: nowrap; max-width: none; font-size: clamp(1.6rem, 3.2vw, 2.6rem);">Engage with SHOGI’s seed round.</h2>
-<p class="cta-copy">SHOGI is engaging qualified investors and strategic partners who recognize the need for cryptographic authority outside an autonomous system’s control.</p>
+<h2 style="white-space: nowrap; max-width: none; font-size: clamp(1.6rem, 3.2vw, 2.6rem);">Talk with the SHOGI team.</h2>
+<p class="cta-copy">We are speaking with qualified investors and strategic partners who see the need for cryptographic authority outside an autonomous system’s control.</p>
+<p class="cta-copy">Meet the national-security and cryptography leaders building it.</p>
 </div>
-<a class="button" href="mailto:bmontgomery@shogisystems.com?subject=Request%20A%20Meeting">Speak With The Founder</a>
+<a class="button" href="mailto:bmontgomery@shogisystems.com?subject=Request%20A%20Meeting">Speak With the Team</a>
 </div>
 <div class="wrap">
 <p class="legal">This page is for informational purposes only and does not constitute an offer to sell, or a solicitation of an offer to buy, securities. Any offering will be made only through definitive offering materials and only to persons eligible to participate under applicable securities laws.</p>
